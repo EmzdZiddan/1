@@ -1,20 +1,27 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
-
-
 @import "tailwindcss";
-
-
 @theme {
   --font-macondo: "Macondo", cursive;
   --font-rhytm: "Rhytm", sans-serif;
 }
-
 @font-face {
   font-family: Rhytm;
   font-style: normal;
   font-weight: normal;
   font-display: swap;
   src: url("/src/fonts/Rhythm\ of\ the\ Blast.ttf") format("truetype");
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  p {
+    @apply text-1xl;
+  }
 }
 
